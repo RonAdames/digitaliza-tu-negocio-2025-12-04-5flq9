@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog de Arena Web - Artículos sobre digitalización, automatización, diseño web y chatbots para negocios en República Dominicana">
+    <meta name="keywords" content="blog, digitalización, automatización, diseño web, chatbots, República Dominicana">
+    <meta name="author" content="Arena Web">
+    <meta property="og:title" content="Blog - Arena Web">
+    <meta property="og:description" content="Descubre artículos sobre transformación digital y soluciones innovadoras para tu negocio">
+    <meta property="og:type" content="website">
+    <title>Blog - Arena Web</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300,400,500,600,700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #FF5A5F 0%, #FF8A8F 100%);
+        }
+        
+        .accent-gradient {
+            background: linear-gradient(135deg, #FFD166 0%, #FFC93C 100%);
+        }
+        
+        .dark-gradient {
+            background: linear-gradient(135deg, #1A1A1A 0%, #2D2D2D 100%);
+        }
+        
+        .smooth-transition {
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .button-primary {
+            background-color: #FF5A5F;
+            color: white;
+            border-radius: 9999px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .button-primary:hover {
+            background-color: #FF3A40;
+            transform: scale(1.05);
+            box-shadow: 0 10px 40px rgba(255, 90, 95, 0.3);
+        }
+        
+        .button-secondary {
+            background-color: #FFD166;
+            color: #1A1A1A;
+            border-radius: 9999px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .button-secondary:hover {
+            background-color: #FFC93C;
+            transform: scale(1.05);
+            box-shadow: 0 10px 40px rgba(255, 209, 102, 0.3);
+        }
+        
+        .card-hover {
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .card-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        }
+        
+        .faq-answer {
+            max-height: 500px;
+            overflow: hidden;
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .faq-answer.hidden {
+            max-height: 0;
+            opacity: 0;
+        }
+        
+        .faq-icon {
+            transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="max-w-7xl mx-auto px-4 md:px-8 py-4 flex justify-between items-center">
+            <a href="https://RonAdames.github.io/digitaliza-tu-negocio-2025-12-04-5flq9" class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-gradient-to-br from-[#FF5A5F] to-[#FF8A8F] rounded-full flex items-center justify-center">
+                    <span class="text-white font-bold text-lg">AW</span>
+                </div>
+                <span class="text-xl font-semibold text-gray-900">Arena Web</span>
+            </a>
+            
+            <a href="https://RonAdames.github.io/digitaliza-tu-negocio-2025-12-04-5flq9" class="text-gray-700 hover:text-[#FF5A5F] smooth-transition font-medium flex items-center space-x-2">
+                <i class="fas fa-arrow-left"></i>
+                <span>Volver</span>
+            </a>
+        </nav>
+    </header>
+
+    <!-- Blog Header Section -->
+    <section class="py-12 md:py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold text-gray-900 mb-4">
+                    Nuestro Blog
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600 font-light max-w-3xl mx-auto">
+                    Descubre artículos, consejos y estrategias sobre digitalización, automatización y transformación digital para llevar tu negocio al siguiente nivel. Aprende de expertos en tecnología y empresarios dominicanos que ya han transformado sus empresas.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Blog Post -->
+    <section class="py-12 md:py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mb-8">
+                Artículo Destacado
+            </h2>
+            
+            <div class="card-hover bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-2xl">
+                <div class="p-8 md:p-12">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-5 h-5 text-[#FF5A5F]" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M5.5 13a3.5 3.5 0 01-.369-6.98 4 4 0 117.753-1.3A4.5 4.5 0 1113.5 13H11V9.413l1.293 1.293a1 1 0 001.414-1.414l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L9 9.414V13H5.5z"></path>
+                            </svg>
+                            <span class="text-sm font-semibold text-[#FF5A5F]">Destacado</span>
+                        </div>
+                        <span class="text-sm text-gray-500 font-light">4 de Diciembre, 2025</span>
+                    </div>
+                    
+                    <h3 class="text-3xl md:text-4xl font-semibold text-gray-900 mb-4 leading-tight">
+                        Cómo la Automatización Digital Revoluciona los Negocios en República Dominicana
+                    </h3>
+                    
+                    <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">
+                        La transformación digital revoluciona los negocios dominicanos a través de automatización, diseño web y chatbots inteligentes. La automatización elimina tareas repetitivas, ahorrando a las empresas aproximadamente 1,300 horas anuales mientras reduce errores hasta en un 95%. Los beneficios clave incluyen mayor productividad, mejor experiencia del cliente y escalabilidad sin aumento proporcional de costos. Historias de éxito reales muestran incrementos de ingresos del 60% y mejoras en reservas del 45%. La implementación implica auditorías de procesos, proyectos piloto, capacitación del personal y escalado gradual. Herramientas modernas como chatbots IA, sistemas CRM y plataformas de automatización de flujos hacen la implementación accesible. El ROI típicamente se recupera en 3-6 meses.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+                        <a href="https://RonAdames.github.io/digitaliza-tu-negocio-2025-12-04-5flq9/blog/c-mo-la-automatizaci-n-digital-revoluciona-los-neg.html" class="button-primary">
+                            Leer Más
+                        </a>
+                        <span class="text-sm text-gray-500 font-light">
+                            Tiempo de lectura: 8 minutos
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts Grid -->
+    <section class="py-12 md:py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mb-8">
+                Más Artículos
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                <!-- Empty State for Future Posts -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 border-dashed flex items-center justify-center min-h-96">
+                    <div class="text-center">
+                        <svg class="w-16 h-16 text-gray-300 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C6.5 6.253 2 10.998 2 17s4.5 10.747 10 10.747c5.5 0 10-4.998 10-10.747S17.5 6.253 12 6.253z"></path>
+                        </svg>
+                        <p class="text-gray-500 font-light">
+                            Próximos artículos próximamente
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 border-dashed flex items-center justify-center min-h-96">
+                    <div class="text-center">
+                        <svg class="w-16 h-16 text-gray-300 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C6.5 6.253 2 10.998 2 17s4.5 10.747 10 10.747c5.5 0 10-4.998 10-10.747S17.5 6.253 12 6.253z"></path>
+                        </svg>
+                        <p class="text-gray-500 font-light">
+                            Próximos artículos próximamente
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 border-dashed flex items-center justify-center min-h-96">
+                    <div class="text-center">
+                        <svg class="w-16 h-16 text-gray-300 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C6.5 6.253 2 10.998 2 17s4.5 10.747 10 10.747c5.5 0 10-4.998 10-10.747S17.5 6.253 12 6.253z"></path>
+                        </svg>
+                        <p class="text-gray-500 font-light">
+                            Próximos artículos próximamente
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Categories Section -->
+    <section class="py-12 md:py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 mb-4">
+                    Categorías de Contenido
+                </h2>
+                <p class="text-lg text-gray-600 font-light max-w-3xl mx-auto">
+                    Explora nuestros artículos organizados por temas de interés
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Category 1: Automatización -->
+                <div class="card-hover bg-white rounded-2xl p-6 shadow-lg border border-gray-100 text-center">
+                    <div class="w-14 h-14 bg-gradient-to-br from-[#FF5A5F] to-[#FF8A8F] rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Automatización</h3>
+                    <p class="text-sm text-gray-600 font-light">
+                        Descubre cómo automatizar procesos y aumentar tu productividad
+                    </p>
+                </div>
+                
+                <!-- Category 2: Diseño Web -->
+                <div class="card-hover bg-white rounded-2xl p-6 shadow-lg border border-gray-100 text-center">
+                    <div class="w-14 h-14 bg-gradient-to-br from-[#FFD166] to-[#FFC93C] rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-7 h-7 text-[#1A1A1A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128A2.25 2.25 0 002.25 18h15A2.25 2.25 0 0019.5 15.75 3 3 0 0013.47 16.122z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Diseño Web</h3>
+                    <p class="text-sm text-gray-600 font-light">
+                        Aprende sobre diseño web moderno y optimización SEO
+                    </p>
+                </div>
+                
+                <!-- Category 3: Chatbots -->
+                <div class="card-hover bg-white rounded-2xl p-6 shadow-lg border border-gray-100 text-center">
+                    <div class="w-14 h-14 bg-gradient-to-br from-[#FF5A5F] to-[#FF8A8F] rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Chatbots IA</h3>
+                    <p class="text-sm text-gray-600 font-light">
+                        Soluciones de atención al cliente con inteligencia artificial
+                    </p>
+                </div>
+                
+                <!-- Category 4: Transformación Digital -->
+                <div class="card-hover bg-white rounded-2xl p-6 shadow-lg border border-gray-100 text-center">
+                    <div class="w-14 h-14 bg-gradient-to-br from-[#FFD166] to-[#FFC93C] rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-7 h-7 text-[#1A1A1A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Transformación Digital</h3>
+                    <p class="text-sm text-gray-600 font-light">
+                        Estrategias y casos de éxito de transformación digital
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-12 md:py-16 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 md:px-8">
+            <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12 border border-gray-100">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 mb-3">
+                        Suscríbete a Nuestro Newsletter
+                    </h2>
+                    <p class="text-lg text-gray-600 font-light">
+                        Recibe los últimos artículos y consejos sobre digitalización directamente en tu correo
+                    </p>
+                </div>
+                
+                <form class="flex flex-col sm:flex-row gap-4">
+                    <input 
+                        type="email" 
+                        placeholder="Tu correo electrónico" 
+                        class="flex-1 px-6 py-3 rounded-full border border-gray-300 focus:outline-none focus:border-[#FF5A5F] smooth-transition"
+                        required
+                    >
+                    <button type="submit" class="button-primary whitespace-nowrap">
+                        Suscribirse
+                    </button>
+                </form>
+                
+                <p class="text-sm text-gray-500 font-light text-center mt-4">
+                    No compartimos tu información con terceros. Puedes darte de baja en cualquier momento.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <!-- Column 1: About -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-[#FF5A5F] to-[#FF8A8F] rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">AW</span>
+                        </div>
+                        <span class="text-xl font-semibold text-white">Arena Web</span>
+                    </div>
+                    <p class="text-sm font-light leading-relaxed">
+                        Transformando negocios dominicanos a través de soluciones digitales innovadoras desde 2015.
+                    </p>
+                </div>
+                
+                <!-- Column 2: Services -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Servicios</h4>
+                    <ul class="space-y-2 text-sm font-light">
+                        <li><a href="https://RonAdames.github.io/digitaliza-tu-negocio-2025-12-04-5flq9#features" class="hover:text-[#FF5A5F] smooth-transition">Automatizaciones</a></li>
+                        <li><a href="https://RonAdames.github.io/digitaliza-tu-negocio-2025-12-04-5flq9#features" class="hover:text-[#FF5A5F] smooth-transition">Diseño Web</a></li>
+                        <li><a href="https://RonAdames.github.io/digitaliza-tu-negocio-2025-12-04-5flq9#features" class="hover:text-[#FF5A5F] smooth-transition">Chatbots</a></li>
+                        <li><a href="https://RonAdames.github.io/digitaliza-tu-negocio-2025-12-04-5flq9#benefits" class="hover:text-[#FF5A5F] smooth-transition">Consultoría Digital</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3: Legal -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-sm font-light">
+                        <li><a href="privacy.html" class="hover:text-[#FF5A5F] smooth-transition">Política de Privacidad</a></li>
+                        <li><a href="terms.html" class="hover:text-[#FF5A5F] smooth-transition">Términos de Servicio</a></li>
+                        <li><a href="blog.html" class="hover:text-[#FF5A5F] smooth-transition">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4: Contact -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contacto</h4>
+                    <p class="text-sm font-light mb-2">
+                        <strong>Email:</strong><br>
+                        <a href="mailto:info@arenaweb.net" class="hover:text-[#FF5A5F] smooth-transition">info@arenaweb.net</a>
+                    </p>
+                    <p class="text-sm font-light">
+                        <strong>Ubicación:</strong><br>
+                        Santo Domingo, República Dominicana
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Divider -->
+            <div class="border-t border-gray-700 my-8"></div>
+            
+            <!-- Bottom -->
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm font-light text-gray-400 mb-4 md:mb-0">
+                    &copy; 2025 Arena Web. Todos los derechos reservados.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-[#FF5A5F] smooth-transition" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-[#FF5A5F] smooth-transition" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-[#FF5A5F] smooth-transition" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-[#FF5A5F] smooth-transition" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
