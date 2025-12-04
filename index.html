@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Digitaliza Tu Negocio en República Dominicana - Automatizaciones, Diseño Web y Chatbots para aumentar ventas y reducir costos">
+    <meta name="keywords" content="digitalización, automatización, diseño web, chatbots, República Dominicana">
+    <meta name="author" content="Arena Web">
+    <meta property="og:title" content="Digitaliza Tu Negocio - Arena Web">
+    <meta property="og:description" content="Transforma tu negocio con automatizaciones, diseño web profesional y chatbots inteligentes">
+    <meta property="og:type" content="website">
+    <title>Digitaliza Tu Negocio - Arena Web</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300,400,500,600,700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #FF5A5F 0%, #FF8A8F 100%);
+        }
+        
+        .accent-gradient {
+            background: linear-gradient(135deg, #FFD166 0%, #FFC93C 100%);
+        }
+        
+        .dark-gradient {
+            background: linear-gradient(135deg, #1A1A1A 0%, #2D2D2D 100%);
+        }
+        
+        .smooth-transition {
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .button-primary {
+            background-color: #FF5A5F;
+            color: white;
+            border-radius: 9999px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .button-primary:hover {
+            background-color: #FF3A40;
+            transform: scale(1.05);
+            box-shadow: 0 10px 40px rgba(255, 90, 95, 0.3);
+        }
+        
+        .button-secondary {
+            background-color: #FFD166;
+            color: #1A1A1A;
+            border-radius: 9999px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .button-secondary:hover {
+            background-color: #FFC93C;
+            transform: scale(1.05);
+            box-shadow: 0 10px 40px rgba(255, 209, 102, 0.3);
+        }
+        
+        .card-hover {
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .card-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        }
+        
+        .faq-answer {
+            max-height: 500px;
+            overflow: hidden;
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .faq-answer.hidden {
+            max-height: 0;
+            opacity: 0;
+        }
+        
+        .faq-icon {
+            transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="max-w-7xl mx-auto px-4 md:px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-gradient-to-br from-[#FF5A5F] to-[#FF8A8F] rounded-full flex items-center justify-center">
+                    <span class="text-white font-bold text-lg">AW</span>
+                </div>
+                <span class="text-xl font-semibold text-gray-900">Arena Web</span>
+            </div>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#features" class="text-gray-700 hover:text-[#FF5A5F] smooth-transition font-medium">Características</a>
+                <a href="#benefits" class="text-gray-700 hover:text-[#FF5A5F] smooth-transition font-medium">Beneficios</a>
+                <a href="#testimonios" class="text-gray-700 hover:text-[#FF5A5F] smooth-transition font-medium">Testimonios</a>
+                <a href="#faq" class="text-gray-700 hover:text-[#FF5A5F] smooth-transition font-medium">Preguntas</a>
+                <a href="https://arenaweb.net" target="_blank" class="button-primary">Comenzar Ahora</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-button md:hidden text-gray-900 text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden bg-white border-t border-gray-200 py-4 px-4">
+            <a href="#features" class="block py-2 text-gray-700 hover:text-[#FF5A5F] smooth-transition font-medium">Características</a>
+            <a href="#benefits" class="block py-2 text-gray-700 hover:text-[#FF5A5F] smooth-transition font-medium">Beneficios</a>
+            <a href="#testimonios" class="block py-2 text-gray-700 hover:text-[#FF5A5F] smooth-transition font-medium">Testimonios</a>
+            <a href="#faq" class="block py-2 text-gray-700 hover:text-[#FF5A5F] smooth-transition font-medium">Preguntas</a>
+            <a href="https://arenaweb.net" target="_blank" class="block mt-4 button-primary text-center">Comenzar Ahora</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient py-16 md:py-24 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-10 right-10 w-72 h-72 bg-white rounded-full blur-3xl"></div>
+            <div class="absolute bottom-10 left-10 w-72 h-72 bg-white rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
+                <div class="text-white">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight tracking-tight mb-6">
+                        Digitaliza Tu Negocio
+                    </h1>
+                    <p class="text-lg md:text-xl font-light leading-relaxed mb-8 text-gray-50">
+                        Transforma tu empresa en República Dominicana con soluciones digitales innovadoras diseñadas para maximizar tu eficiencia y aumentar tus ganancias.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://arenaweb.net" target="_blank" class="button-primary bg-white text-[#FF5A5F] hover:bg-gray-100 text-center">
+                            Solicitar Demostración
+                        </a>
+                        <a href="#features" class="button-secondary text-center">
+                            Conocer Más
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hidden lg:flex items-center justify-center">
+                    <div class="relative w-full h-96">
+                        <div class="absolute inset-0 bg-white rounded-2xl opacity-10 blur-2xl"></div>
+                        <div class="relative bg-white bg-opacity-20 backdrop-blur rounded-3xl p-8 border border-white border-opacity-30 h-full flex items-center justify-center">
+                            <div class="text-center text-white">
+                                <svg class="w-24 h-24 mx-auto mb-4 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                                <p class="text-xl font-semibold">Potencia Tu Negocio</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-12 md:py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-4">
+                    Características Principales
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto font-light">
+                    Descubre las herramientas más potentes para transformar tu negocio y llevar tu empresa al siguiente nivel
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                <!-- Feature 1: Automatizaciones -->
+                <div class="card-hover bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                    <div class="w-14 h-14 bg-gradient-to-br from-[#FF5A5F] to-[#FF8A8F] rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-semibold text-gray-900 mb-3">Automatizaciones de Tareas</h3>
+                    <p class="text-gray-600 font-light leading-relaxed mb-4">
+                        Automatiza procesos repetitivos y ahorra hasta el 70% del tiempo administrativo. Desde envío de correos hasta gestión de pedidos, nuestras soluciones trabajan 24/7 para ti.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <li class="flex items-center"><span class="text-[#FF5A5F] mr-2">✓</span> Flujos de trabajo personalizados</li>
+                        <li class="flex items-center"><span class="text-[#FF5A5F] mr-2">✓</span> Integración con múltiples plataformas</li>
+                        <li class="flex items-center"><span class="text-[#FF5A5F] mr-2">✓</span> Reportes en tiempo real</li>
+                    </ul>
+                </div>
+                
+                <!-- Feature 2: Diseño Web -->
+                <div class="card-hover bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                    <div class="w-14 h-14 bg-gradient-to-br from-[#FFD166] to-[#FFC93C] rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-[#1A1A1A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128A2.25 2.25 0 002.25 18h15A2.25 2.25 0 0019.5 15.75 3 3 0 0013.47 16.122z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-semibold text-gray-900 mb-3">Diseño Web Profesional</h3>
+                    <p class="text-gray-600 font-light leading-relaxed mb-4">
+                        Sitios web modernos, responsivos y optimizados para SEO que convierten visitantes en clientes. Diseñados específicamente para negocios en República Dominicana.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <li class="flex items-center"><span class="text-[#FFD166] mr-2">✓</span> Diseño mobile-first</li>
+                        <li class="flex items-center"><span class="text-[#FFD166] mr-2">✓</span> Optimización SEO completa</li>
+                        <li class="flex items-center"><span class="text-[#FFD166] mr-2">✓</span> Velocidad ultra rápida</li>
+                    </ul>
+                </div>
+                
+                <!-- Feature 3: Chatbots -->
+                <div class="card-hover bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                    <div class="w-14 h-14 bg-gradient-to-br from-[#FF5A5F] to-[#FF8A8F] rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-semibold text-gray-900 mb-3">Chatbots Inteligentes</h3>
+                    <p class="text-gray-600 font-light leading-relaxed mb-4">
+                        Atiende a tus clientes 24/7 con chatbots impulsados por IA. Responde preguntas, toma pedidos y brinda soporte sin intervención humana.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <li class="flex items-center"><span class="text-[#FF5A5F] mr-2">✓</span> Disponible en WhatsApp y web</li>
+                        <li class="flex items-center"><span class="text-[#FF5A5F] mr-2">✓</span> Aprendizaje automático</li>
+                        <li class="flex items-center"><span class="text-[#FF5A5F] mr-2">✓</span> Soporte multiidioma</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-12 md:py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-4">
+                    Beneficios Comprobados
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto font-light">
+                    Empresas en República Dominicana ya están experimentando resultados extraordinarios
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                <!-- Benefit 1: Ahorro de Tiempo -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg border-l-4 border-[#FF5A5F] card-hover">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-full bg-[#FF5A5F] bg-opacity-10">
+                                <svg class="h-6 w-6 text-[#FF5A5F]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Ahorre Tiempo Valioso</h3>
+                            <p class="text-gray-600 font-light leading-relaxed">
+                                Reduce hasta 70% de tareas administrativas. Tus empleados pueden enfocarse en actividades que realmente generan valor para tu negocio.
+                            </p>
+                            <p class="text-[#FF5A5F] font-semibold mt-3">Hasta 25 horas/semana ahorradas</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Benefit 2: Aumento de Ventas -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg border-l-4 border-[#FFD166] card-hover">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-full bg-[#FFD166] bg-opacity-10">
+                                <svg class="h-6 w-6 text-[#FFD166]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8L5.343 21.364c-.484.484-1.268.484-1.757 0l-2.243-2.243c-.484-.484-.484-1.273 0-1.757L13.9 3.9m0 0L3 14"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Aumente Sus Ventas</h3>
+                            <p class="text-gray-600 font-light leading-relaxed">
+                                Mejora la experiencia del cliente y automatiza el proceso de ventas. Convierte más visitantes en clientes satisfechos.
+                            </p>
+                            <p class="text-[#FFD166] font-semibold mt-3">Incremento promedio de 45% en conversiones</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Benefit 3: Reducción de Costos -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg border-l-4 border-[#FF5A5F] card-hover">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-full bg-[#FF5A5F] bg-opacity-10">
+                                <svg class="h-6 w-6 text-[#FF5A5F]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Reduzca Sus Costos</h3>
+                            <p class="text-gray-600 font-light leading-relaxed">
+                                Minimiza gastos operacionales eliminando procesos manuales y reduciendo errores costosos.
+                            </p>
+                            <p class="text-[#FF5A5F] font-semibold mt-3">Ahorro de hasta RD$ 500,000 anuales</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="py-12 md:py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-6">
+                        Sobre Nosotros
+                    </h2>
+                    <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">
+                        Arena Web fue fundada en 2015 con una misión clara: democratizar el acceso a tecnología digital de calidad para pequeñas y medianas empresas en República Dominicana. Comenzamos como un pequeño equipo de desarrolladores apasionados por la innovación, y hoy somos líderes en transformación digital en el país. Nuestro viaje ha sido marcado por el compromiso de entender los desafíos únicos de los negocios locales y proporcionar soluciones que realmente funcionan.
+                    </p>
+                    <p class="text-lg text-gray-600 font-light leading-relaxed">
+                        En Arena Web, creemos que toda empresa, sin importar su tamaño, merece acceso a herramientas digitales de clase mundial. Nuestros valores fundamentales son la innovación constante, la excelencia en servicio al cliente y el compromiso con el éxito de nuestros clientes. Trabajamos diariamente para ayudar a empresas dominicanas a competir globalmente, aumentar su productividad y alcanzar sus metas más ambiciosas a través de la tecnología.
+                    </p>
+                </div>
+                
+                <div class="hidden lg:flex items-center justify-center">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-gradient-to-br from-[#FF5A5F] to-[#FFD166] rounded-2xl blur-2xl opacity-20"></div>
+                        <div class="relative bg-gradient-to-br from-[#FF5A5F] to-[#FF8A8F] rounded-2xl p-8 text-white">
+                            <div class="grid grid-cols-2 gap-6 text-center">
+                                <div>
+                                    <p class="text-4xl font-bold">500+</p>
+                                    <p class="text-sm font-light mt-2">Clientes Satisfechos</p>
+                                </div>
+                                <div>
+                                    <p class="text-4xl font-bold">10+</p>
+                                    <p class="text-sm font-light mt-2">Años de Experiencia</p>
+                                </div>
+                                <div>
+                                    <p class="text-4xl font-bold">98%</p>
+                                    <p class="text-sm font-light mt-2">Tasa de Satisfacción</p>
+                                </div>
+                                <div>
+                                    <p class="text-4xl font-bold">24/7</p>
+                                    <p class="text-sm font-light mt-2">Soporte Disponible</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonios" class="py-12 md:py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-4">
+                    Lo Que Dicen Nuestros Clientes
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto font-light">
+                    Descubre cómo empresas dominicanas han transformado su negocio con nuestras soluciones
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="flex space-x-1">
+                            <svg class="w-5 h-5 text-[#FFD166]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5 text-[#FFD166]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5 text-[#FFD166]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5 text-[#FFD166]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 font-light leading-relaxed mb-6">
+                        "Implementar el chatbot de Arena Web revolucionó nuestro servicio al cliente. Ahora respondemos consultas instantáneamente las 24 horas, lo que ha incrementado nuestras ventas en un 40%. El equipo fue muy profesional y el soporte es excepcional."
+                    </p>
+                    <div>
+                        <p class="font-semibold text-gray-900">María Rodríguez</p>
+                        <p class="text-sm text-gray-600 font-light">Gerente General, Tienda Online Fashion RD</p>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="flex space-x-1">
+                            <svg class="w-5 h-5 text-[#FFD166]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5 text-[#FFD166]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5 text-[#FFD166]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5 text-[#FFD166]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 font-light leading-relaxed mb-6">
+                        "El nuevo sitio web que Arena Web diseñó para nosotros ha sido transformacional. Nuestro tráfico se triplicó en tres meses y las conversiones aumentaron significativamente. El diseño es hermoso y la velocidad de carga es impresionante."
+                    </p>
+                    <div>
+                        <p class="font-semibold text-gray-900">Juan Carlos López</p>
+                        <p class="text-sm text-gray-600 font-light">Propietario, Restaurante Sabor Dominicano</p>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="flex space-x-1">
+                            <svg class="w-5 h-5 text-[#FFD166]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5 text-[#FFD166]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5 text-[#FFD166]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5 text-[#FFD166]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 font-light leading-relaxed mb-6">
+                        "Las automatizaciones implementadas por Arena Web nos han ahorrado más de 20 horas semanales. Nuestro equipo ahora puede enfocarse en tareas estratégicas. El ROI fue evidente en el primer mes. Altamente recomendado."
+                    </p>
+                    <div>
+                        <p class="font-semibold text-gray-900">Sandra Martínez</p>
+                        <p class="text-sm text-gray-600 font-light">Directora de Operaciones, Empresa Logística Express</p>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 4 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="flex space-x-1">
+                            <svg class="w-5 h-5 text-[#FFD166]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5 text-[#FFD166]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5 text-[#FFD166]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5 text-[#FFD166]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 font-light leading-relaxed mb-6">
+                        "Trabajar con Arena Web fue una experiencia increíble. El equipo entiende perfectamente los desafíos de los negocios dominicanos. Nuestro negocio de consultoría ahora es completamente digital y hemos expandido nuestro mercado significativamente."
+                    </p>
+                    <div>
+                        <p class="font-semibold text-gray-900">Roberto Fernández</p>
+                        <p class="text-sm text-gray-600 font-light">Consultor Empresarial, Soluciones Estratégicas RD</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section with Background Image -->
+    <section class="py-16 md:py-24 relative overflow-hidden" style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=80'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 bg-gradient-to-r from-[#1A1A1A] to-[#1A1A1A] opacity-70"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 md:px-8 relative z-10 text-center">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-white mb-6">
+                Comienza Tu Transformación Digital Hoy
+            </h2>
+            <p class="text-lg md:text-xl text-gray-200 font-light max-w-3xl mx-auto mb-8">
+                Únete a cientos de empresas dominicanas que ya están digitalizadas y creciendo. Tu éxito es nuestro éxito.
+            </p>
+            <a href="https://arenaweb.net" target="_blank" class="inline-block button-primary bg-[#FF5A5F] hover:bg-[#FF3A40]">
+                Solicitar Demostración Gratuita
+            </a>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-12 md:py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 md:px-8">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-4">
+                    Preguntas Frecuentes
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto font-light">
+                    Resolvemos tus dudas sobre nuestros servicios y cómo podemos ayudarte
+                </p>
+            </div>
+            
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item bg-white border border-gray-200 rounded-2xl shadow-md">
+                    <button class="faq-question w-full px-6 md:px-8 py-5 md:py-6 flex items-center justify-between hover:bg-gray-50 smooth-transition">
+                        <span class="text-lg md:text-xl font-semibold text-gray-900 text-left">¿Cuánto tiempo toma implementar una solución digital?</span>
+                        <svg class="faq-icon w-6 h-6 text-[#FF5A5F] flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-6 md:px-8 pb-6">
+                        <p class="text-gray-700 font-light leading-relaxed">
+                            El tiempo de implementación depende de la complejidad del proyecto. Un sitio web básico puede estar listo en 2-4 semanas, mientras que automatizaciones más complejas pueden tomar 4-8 semanas. Ofrecemos un cronograma detallado en la consulta inicial para que sepas exactamente qué esperar.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="faq-item bg-white border border-gray-200 rounded-2xl shadow-md">
+                    <button class="faq-question w-full px-6 md:px-8 py-5 md:py-6 flex items-center justify-between hover:bg-gray-50 smooth-transition">
+                        <span class="text-lg md:text-xl font-semibold text-gray-900 text-left">¿Cuál es el costo de los servicios?</span>
+                        <svg class="faq-icon w-6 h-6 text-[#FF5A5F] flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-6 md:px-8 pb-6">
+                        <p class="text-gray-700 font-light leading-relaxed">
+                            Ofrecemos planes flexibles adaptados a cualquier presupuesto. Los precios varían según el alcance del proyecto, desde paquetes básicos a partir de RD$ 15,000 hasta soluciones empresariales personalizadas. Proporcionamos cotizaciones sin compromiso después de entender tus necesidades específicas. Contacta con nosotros para una evaluación gratuita.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="faq-item bg-white border border-gray-200 rounded-2xl shadow-md">
+                    <button class="faq-question w-full px-6 md:px-8 py-5 md:py-6 flex items-center justify-between hover:bg-gray-50 smooth-transition">
+                        <span class="text-lg md:text-xl font-semibold text-gray-900 text-left">¿Ofrecen soporte después del lanzamiento?</span>
+                        <svg class="faq-icon w-6 h-6 text-[#FF5A5F] flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-6 md:px-8 pb-6">
+                        <p class="text-gray-700 font-light leading-relaxed">
+                            ¡Por supuesto! Ofrecemos soporte técnico disponible 24/7 para todos nuestros clientes. Incluye mantenimiento, actualizaciones de seguridad, optimización de rendimiento y asistencia con cualquier problema que surja. También ofrecemos planes de soporte premium con respuesta prioritaria y actualizaciones de características.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="faq-item bg-white border border-gray-200 rounded-2xl shadow-md">
+                    <button class="faq-question w-full px-6 md:px-8 py-5 md:py-6 flex items-center justify-between hover:bg-gray-50 smooth-transition">
+                        <span class="text-lg md:text-xl font-semibold text-gray-900 text-left">¿Cómo funciona el chatbot con WhatsApp?</span>
+                        <svg class="faq-icon w-6 h-6 text-[#FF5A5F] flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-6 md:px-8 pb-6">
+                        <p class="text-gray-700 font-light leading-relaxed">
+                            Nuestro chatbot se integra directamente con WhatsApp Business. Los clientes pueden contactarte a través de WhatsApp y el bot responderá automáticamente a preguntas frecuentes, tomará pedidos y brindará soporte. Puedes revisar conversaciones complejas y tomar el control cuando sea necesario. Todo funciona sin necesidad de cambiar tu número de teléfono.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div class="faq-item bg-white border border-gray-200 rounded-2xl shadow-md">
+                    <button class="faq-question w-full px-6 md:px-8 py-5 md:py-6 flex items-center justify-between hover:bg-gray-50 smooth-transition">
+                        <span class="text-lg md:text-xl font-semibold text-gray-900 text-left">¿Qué garantía tienen los sitios web que crean?</span>
+                        <svg class="faq-icon w-6 h-6 text-[#FF5A5F] flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-6 md:px-8 pb-6">
+                        <p class="text-gray-700 font-light leading-relaxed">
+                            Todos nuestros sitios web incluyen garantía de funcionamiento de 30 días. Si algo no funciona correctamente, lo corregimos sin costo adicional. Además, garantizamos que tu sitio estará optimizado para SEO, móvil y velocidad de carga. Ofrecemos revisiones y ajustes ilimitados durante el período de desarrollo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <!-- Column 1: About -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-[#FF5A5F] to-[#FF8A8F] rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">AW</span>
+                        </div>
+                        <span class="text-xl font-semibold text-white">Arena Web</span>
+                    </div>
+                    <p class="text-sm font-light leading-relaxed">
+                        Transformando negocios dominicanos a través de soluciones digitales innovadoras desde 2015.
+                    </p>
+                </div>
+                
+                <!-- Column 2: Services -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Servicios</h4>
+                    <ul class="space-y-2 text-sm font-light">
+                        <li><a href="#features" class="hover:text-[#FF5A5F] smooth-transition">Automatizaciones</a></li>
+                        <li><a href="#features" class="hover:text-[#FF5A5F] smooth-transition">Diseño Web</a></li>
+                        <li><a href="#features" class="hover:text-[#FF5A5F] smooth-transition">Chatbots</a></li>
+                        <li><a href="#benefits" class="hover:text-[#FF5A5F] smooth-transition">Consultoría Digital</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3: Legal -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-sm font-light">
+                        <li><a href="privacy.html" class="hover:text-[#FF5A5F] smooth-transition">Política de Privacidad</a></li>
+                        <li><a href="terms.html" class="hover:text-[#FF5A5F] smooth-transition">Términos de Servicio</a></li>
+                        <li><a href="blog.html" class="hover:text-[#FF5A5F] smooth-transition">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4: Contact -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contacto</h4>
+                    <p class="text-sm font-light mb-2">
+                        <strong>Email:</strong><br>
+                        <a href="mailto:info@arenaweb.net" class="hover:text-[#FF5A5F] smooth-transition">info@arenaweb.net</a>
+                    </p>
+                    <p class="text-sm font-light">
+                        <strong>Ubicación:</strong><br>
+                        Santo Domingo, República Dominicana
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Divider -->
+            <div class="border-t border-gray-700 my-8"></div>
+            
+            <!-- Bottom -->
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm font-light text-gray-400 mb-4 md:mb-0">
+                    &copy; 2025 Arena Web. Todos los derechos reservados.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-[#FF5A5F] smooth-transition" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-[#FF5A5F] smooth-transition" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-[#FF5A5F] smooth-transition" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-[#FF5A5F] smooth-transition" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion Toggle
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const answer = item.querySelector('.faq-answer');
+                        const isOpen = !answer.classList.contains('hidden');
+                        
+                        // Close all other FAQ items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+                                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
+                            }
+                        });
+                        
+                        // Toggle current item
+                        answer?.classList.toggle('hidden');
+                        item.querySelector('.faq-icon')?.classList.toggle('rotate-180');
+                    });
+                }
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
