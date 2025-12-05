@@ -89,6 +89,37 @@
         .faq-icon {
             transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
         }
+        
+        .scroll-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 3.5rem;
+            height: 3.5rem;
+            background-color: #FF5A5F;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 40;
+            box-shadow: 0 10px 40px rgba(255, 90, 95, 0.3);
+        }
+        
+        .scroll-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .scroll-to-top:hover {
+            background-color: #FF3A40;
+            transform: scale(1.1);
+            box-shadow: 0 15px 50px rgba(255, 90, 95, 0.4);
+        }
     </style>
 </head>
 <body class="bg-white text-gray-900">
@@ -128,6 +159,11 @@
             <a href="https://arenaweb.net" target="_blank" class="block mt-4 button-primary text-center">Comenzar Ahora</a>
         </div>
     </header>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTopBtn" aria-label="Volver al inicio">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <!-- Hero Section -->
     <section class="hero-gradient py-16 md:py-24 relative overflow-hidden">
@@ -644,6 +680,24 @@
     <!-- JavaScript -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            // Scroll to Top Button
+            const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+            
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    scrollToTopBtn.classList.add('visible');
+                } else {
+                    scrollToTopBtn.classList.remove('visible');
+                }
+            });
+            
+            scrollToTopBtn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
             // Mobile Menu Toggle
             const mobileMenuButton = document.querySelector('.mobile-menu-button');
             const mobileMenu = document.querySelector('.mobile-menu');
